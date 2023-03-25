@@ -6,6 +6,7 @@ const balanceSpan = document.querySelector('#balanceSpan')
 const tokenSpan = document.querySelector('#tokenSpan')
 const accountSpan = document.querySelector('#accountSpan')
 const currentChain = document.querySelector('#currentChain')
+const topChain = document.querySelector('#topChain')
 
   // Your code here...
 
@@ -90,6 +91,7 @@ else{
             accountSpan.innerHTML = account                
             balanceSpan.innerHTML = balance
             currentChain.innerHTML = parseInt(chainId,16)
+            topScore.innerHTML = '9999999'
 
             const web3 = new Web3(window.ethereum);
             
