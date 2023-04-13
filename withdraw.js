@@ -93,8 +93,8 @@ const ERC20TransferABI = [
   // const FIREFARM_ADDRESS = "0x90ADa97c5913c2383301E1b52dE962f19387122C"
   // const GAME_ADDRESS = "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0"
   // mumbai
-  const USDC_ADDRESS = "0x42A5195f431d34c9373B2504639a88CEfD00768f"
-  const FIRE_ADDRESS = "0x4bbA934daE70E655F45bD6C7B5988Db3B0312fD4"
+  const USDC_ADDRESS = "0x0FA8781a83E46826621b3BC094Ea2A0212e71B23"
+  const FIRE_ADDRESS = "0x9D58923733C595fF7C7C05Cd1b192ddc399D2FE8"
   const FIREFARM_ADDRESS = "0x90ADa97c5913c2383301E1b52dE962f19387122C"
   const GAME_ADDRESS = "0x8969c2ba517e5ab42D2d016FF0A82bf5Dd420f11"
   
@@ -190,7 +190,7 @@ const ERC20TransferABI = [
                 console.log("The staking balance is: ", res)
                 const stakingBalance = res * (10 ** -6);
                 console.log('staking balance', stakingBalance)
-                stakingBalanceSpan.innerHTML = stakingBalance
+                // stakingBalanceSpan.innerHTML = stakingBalance
               })
 
             const usdcContract = await new web3.eth.Contract(ERC20TransferABI, USDC_ADDRESS);   
@@ -202,7 +202,7 @@ const ERC20TransferABI = [
                 console.log("The balance is: ", res)
                 const usdcBalance = res  * 10 ** -6;
                 console.log('usdc_balance', usdcBalance)
-                balanceSpan.innerHTML = usdcBalance
+                stakingBalanceSpan.innerHTML = usdcBalance
               })
     
         } catch (error) {
